@@ -1,0 +1,1641 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  <meta name="description" content="An independent research initiative working to expand the frame of art.">
+  <meta name="keywords" content="southeast-asia, art, asia, research, artist, documents">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <!-- Malihu Custom Scroll -->
+  <link rel="stylesheet" href="scroll/jquery.mCustomScrollbar.css" />
+
+  <link rel="stylesheet" href="stylesheet.css">
+
+  <title>KIRTI</title>
+</head>
+
+<body class="normal">
+  <header class="container full">
+    <div class="row">
+      <div class="col header-whitespace"></div>
+    </div>
+    <div class="row category">
+      <div class="col-9">
+        <a href="index.html">Index</a>&nbsp;/
+        <a href="documents.html" class="selected-button">Channel</a>&nbsp;/
+        <a href="atlas.html">Atlas</a>
+      </div>
+      <div class="col-3" id="Kirti-About">
+        <a href="about.html" id="button-about" class="no-highlight">About</a>
+      </div>
+    </div> 
+  </header>
+
+  <div class="container container-documents full">
+   	<b>Recently Added</b>	
+	<div class="row recent-row">
+		<div class="channel-name no-highlight cursor recent-row-box" id="button-Apollo1">
+			<div class="recent-row-img"><img src="img/Channel/Apollo-cover.png"></div>	
+			<div>	
+			<p>Apollo-12 Astonauts Visit Burma</p><br>
+			<p>1970</p><br>
+			<p>Harold G. McConeghey</p><br>
+			<p>Photo Album</p><br>
+			</div>	
+		</div>
+		<div class="channel-name no-highlight cursor recent-row-box" id="button-PharePonleuSelpak1">
+			<div class="recent-row-img"><img src="img/Channel/PharePonleuSelpak-cover.png"></div>	
+			<div>	
+			<p>Phare Ponleu Selpak</p><br>
+			<p>2019</p><br>
+			<p>Phare Ponleu Selpak</p><br>
+			<p>Song and Dance</p><br>
+			</div>	
+		</div>
+		<div class="channel-name no-highlight cursor recent-row-box" id="button-TheState1">
+			<div class="recent-row-img"><img src="img/Channel/TheState-cover.png"></div>
+			<div>	
+			<p>The State of Conflict and Violence in Asia</p><br>
+			<p>2017</p><br>
+			<p>Asia Foundation</p><br>
+			<p>Politics</p><br>
+			</div>	
+    </div>
+    <div class="channel-name no-highlight cursor recent-row-box" id="button-LuxuryAndRubble1">
+			<div class="recent-row-img"><img src="img/Channel/LuxuryAndRubble-cover.png"></div>
+			<div>	
+			<p>Luxury and Rubble: Civility and Dispossession in the New Saigon</p><br>
+			<p>2016</p><br>
+			<p>Erik Harms</p><br>
+			<p>Urban Studies</p><br>
+      </div>	
+		</div>
+	</div> 
+	  <div class="container-documents-row row">
+      <div class="col Items">
+        <table id="myTable">
+          <tr>
+            <!--When a header is clicked, run the sortTable function, with a parameter, 0 for sorting by names, 1 for sorting by country:-->
+            <th class="col-md-5 col-sm-5 col-6" onclick="sortTable(0)">Title</th>
+            <th class="col-md-1 col-sm-1 col-1" onclick="sortTable(1)">Year</th>
+            <th class="col-md-4 col-sm-3 col-2" onclick="sortTable(2)">Author</th>
+            <th class="col-md-2 col-sm-2 col-2" onclick="sortTable(3)">Type</th>
+          </tr>
+          <tr class="channel-name no-highlight cursor" id="button-Apollo">
+            <td>Apollo-12 Astonauts Visit Burma</td>
+            <td>1970</td>
+            <td>Harold G. McConeghey</td>
+            <td>Photo Album</td>
+          </tr>
+          <tr class="channel-name no-highlight cursor" id="button-AtHomeDuhoang">
+            <td>At home with Du Hoang</td>
+            <td>2019</td>
+            <td>Du Hoang</td>
+            <td>Studio Visit</td>
+          </tr>
+          <tr class="channel-name no-highlight cursor" id="button-AtHomePheSophon">
+            <td>At home with Phe Sophon</td>
+            <td>2019</td>
+            <td>Phe Sophon</td>
+            <td>Studio Visit</td>
+          </tr>
+          <tr class="channel-name no-highlight cursor" id="button-AtThasnai">
+            <td>At Thasnai Sethaseree's studio</td>
+            <td>2019</td>
+            <td>Thasnai Sethaseree</td>
+            <td>Studio Visit</td>
+          </tr>
+          <tr class="channel-name no-highlight cursor" id="button-AtTheStudioDuHoang">
+            <td>At the studio with Du Hoang</td>
+            <td>2019</td>
+            <td>Du Hoang</td>
+            <td>Studio Visit</td>
+          </tr>
+          <tr class="channel-name no-highlight cursor" id="button-BunthengDraws">
+            <td>Buntheng draws Rahu</td>
+            <td>2019</td>
+            <td>Buntheng Bat</td>
+            <td>Demonstration</td>
+          </tr>
+          <tr class="channel-name no-highlight cursor" id="button-Burma">
+            <td>Burma -- Golden Guide to SEA</td>
+            <td>1961</td>
+            <td>Unknown</td>
+            <td>Travel Guide</td>
+          </tr>
+          <tr class="channel-name no-highlight cursor" id="button-BurmaPamphlets">
+            <td>Burma Pamphlets No.8: The Karens of Burma</td>
+            <td>1945</td>
+            <td>Harry I. Marshall</td>
+            <td>Anthropology</td>
+          </tr>
+          <tr class="channel-name no-highlight cursor" id="button-Calligraphy">
+            <td>Calligraphy walkthrough</td>
+            <td>2018</td>
+            <td>Tien Ve Group</td>
+            <td>Demonstration</td>
+          </tr>
+          <tr class="channel-name no-highlight cursor" id="button-Cambodia">
+            <td>Cambodia -- Golden Guide to SEA</td>
+            <td>1961</td>
+            <td>Unknown</td>
+            <td>Travel Guide</td>
+          </tr>
+          <tr class="channel-name no-highlight cursor" id="button-InTheBathroom">
+            <td>In the bathroom at Gallery Ver</td>
+            <td>2018</td>
+            <td>Thitibodee Rungteerawattananon</td>
+            <td>Exhibition</td>
+          </tr>
+          <tr class="channel-name no-highlight cursor" id="button-InterviewManitSriwanichpoom">
+            <td>Interview with Manit Sriwanichpoom</td>
+            <td>2019</td>
+            <td>Manit Sriwanichpoom</td>
+            <td>Interview</td>
+          </tr>
+          <tr class="channel-name no-highlight cursor" id="button-InterviewSaiHtinLinnHtet">
+            <td>Interview with Sai Htin Linn Htet</td>
+            <td>2019</td>
+            <td>Sai Htin Linn Htet</td>
+            <td>Interview</td>
+          </tr>
+          <tr class="channel-name no-highlight cursor" id="button-InterviewYuYuMyintThan">
+            <td>Interview with Yu Yu Myint Than</td>
+            <td>2019</td>
+            <td>Yu Yu Myint Than</td>
+            <td>Interview</td>
+          </tr>
+          <tr class="channel-name no-highlight cursor" id="button-KirtiWebDraft">
+            <td>KIRTI website draft</td>
+            <td>2019</td>
+            <td>KIRTI</td>
+            <td>Process</td>
+          </tr>
+          <tr class="channel-name no-highlight cursor" id="button-KirtiPrototype">
+            <td>KIRTI October 2018 Prototype</td>
+            <td>2018</td>
+            <td>Hunter Panther Deerfield</td>
+            <td>Prototype</td>
+          </tr>
+          <tr class="channel-name no-highlight cursor" id="button-LuxuryAndRubble">
+            <td>Luxury and Rubble: Civility and Dispossession in the New Saigon</td>
+            <td>2016</td>
+            <td>Erik Harms</td>
+            <td>Urban Studies</td>
+          </tr>
+          <tr class="channel-name no-highlight cursor" id="button-MitJaiInnStudio">
+            <td>At Mit Jai Inn's studio</td>
+            <td>2019</td>
+            <td>Mit Jai Inn</td>
+            <td>Studio Visit</td>
+          </tr>
+          <tr class="channel-name no-highlight cursor" id="button-MusicVideo">
+            <td>Music video with Phe Sophon</td>
+            <td>2019</td>
+            <td>Phe Sophon</td>
+            <td>Studio Visit</td>
+          </tr>
+          <tr class="channel-name no-highlight cursor" id="button-NewPolitical">
+            <td>New Political Space, Old Tensions: History, Identity and Violence in Rakhine State, Myanmar</td>
+            <td>2016</td>
+            <td>Adam Burke</td>
+            <td>Politics</td>
+          </tr>
+          <tr class="channel-name no-highlight cursor" id="button-Performance">
+            <td>Performance at the Institute of Hán-Nôm Studies</td>
+            <td>2018</td>
+            <td>Tien Ve Group</td>
+            <td>Demonstration</td>
+          </tr>
+          <tr class="channel-name no-highlight cursor" id="button-PharePonleuSelpak">
+            <td>Phare Ponleu Selpak</td>
+            <td>2019</td>
+            <td>Phare Ponleu Selpak</td>
+            <td>Song and Dance</td>
+          </tr>
+          <tr class="channel-name no-highlight cursor" id="button-PhuongDucPlays">
+            <td>Phuong Duc plays an instrument</td>
+            <td>2018</td>
+            <td>Phuong Duc</td>
+            <td>Studio Visit</td>
+          </tr>
+          <tr class="channel-name no-highlight cursor" id="button-PornchaiChaimaMural">
+            <td>Pornchai Chaima's mural</td>
+            <td>2019</td>
+            <td>Pornchai Chaima</td>
+            <td>Studio Visit</td>
+          </tr>
+          <tr class="channel-name no-highlight cursor" id="button-ProposedGardening">
+            <td>Proposed gardening with Huy An</td>
+            <td>2019</td>
+            <td>Huy An</td>
+            <td>Studio Visit</td>
+          </tr>
+          <tr class="channel-name no-highlight cursor" id="button-SanMinnStreet">
+            <td>San Minn in the street</td>
+            <td>2018</td>
+            <td>San Minn</td>
+            <td>Studio Visit</td>
+          </tr>
+          <tr class="channel-name no-highlight cursor" id="button-SanMinnStudio">
+            <td>San Minn in his studio</td>
+            <td>2018</td>
+            <td>San Minn</td>
+            <td>Studio Visit</td>
+          </tr>
+          <tr class="channel-name no-highlight cursor" id="button-Slideshow">
+            <td>Slideshow with Huy An</td>
+            <td>2019</td>
+            <td>Huy An</td>
+            <td>Studio Visit</td>
+          </tr>
+          <tr class="channel-name no-highlight cursor" id="button-SmallTalk">
+            <td>Small talk at Thasnai Sethaseree's studio</td>
+            <td>2019</td>
+            <td>Thasnai Sethaseree</td>
+            <td>Studio Visit</td>
+          </tr>
+          <tr class="channel-name no-highlight cursor" id="button-SongAndDance">
+            <td>Song and Dance Ensemble of Burma</td>
+            <td>1956</td>
+            <td>U Win Maung</td>
+            <td>Dance</td>
+          </tr>
+          <tr class="channel-name no-highlight cursor" id="button-SouthVietnam">
+            <td>South Vietnam -- Golden Guide to SEA</td>
+            <td>1961</td>
+            <td>Unknown</td>
+            <td>Travel Guide</td>
+          </tr>
+          <tr class="channel-name no-highlight cursor" id="button-Thailand">
+            <td>Thailand -- Golden Guide to SEA</td>
+            <td>1961</td>
+            <td>Unknown</td>
+            <td>Travel Guide</td>
+          </tr>
+          <tr class="channel-name no-highlight cursor" id="button-TheContestedCorners">
+            <td>The Contested Corners of Asia: Subnational Conflict and International Development Assistance</td>
+            <td>2013</td>
+            <td>Asia Foundation</td>
+            <td>Politics</td>
+          </tr>
+          <tr class="channel-name no-highlight cursor" id="button-TheState">
+            <td>The State of Conflict and Violence in Asia</td>
+            <td>2017</td>
+            <td>Asia Foundation</td>
+            <td>Politics</td>
+          </tr>
+          <tr class="channel-name no-highlight cursor" id="button-VeryStrange">
+            <td>Very strange, with the Le Brothers</td>
+            <td>2018</td>
+            <td>Le Brothers</td>
+            <td>Studio Visit</td>
+          </tr>
+          <tr class="channel-name no-highlight cursor" id="button-VIPParty">
+            <td>VIP Party, Bangkok Biennale</td>
+            <td>2018</td>
+            <td>Bangkok Biennale</td>
+            <td>Art World</td>
+          </tr>
+          <tr class="channel-name no-highlight cursor" id="button-VisitPhuongDuc">
+            <td>Visit to Phuong Duc's studio</td>
+            <td>2019</td>
+            <td>Phuong Duc</td>
+            <td>Studio Visit</td>
+          </tr>
+          <tr class="channel-name no-highlight cursor" id="button-WalkingToTheStudio">
+            <td>Walking to the studio with Du Hoang</td>
+            <td>2019</td>
+            <td>Du Hoang</td>
+            <td>Studio Visit</td>
+          </tr>
+          <tr class="channel-name no-highlight cursor" id="button-ZarMinHtikeShows">
+            <td>Zar Min Htike shows his portfolio in the car</td>
+            <td>2019</td>
+            <td>Zar Min Htike</td>
+            <td>Portfolio Review</td>
+          </tr>
+          <tr class="channel-name no-highlight cursor" id="button-ZarMinHtikeHome">
+            <td>Zar Min Htike at his home</td>
+            <td>2019</td>
+            <td>Zar Min Htike</td>
+            <td>Studio Visit</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  <script>
+    function sortTable(n) {
+      var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+      table = document.getElementById("myTable");
+      switching = true;
+      //Set the sorting direction to ascending:
+      dir = "asc";
+      /*Make a loop that will continue until
+      no switching has been done:*/
+      while (switching) {
+        //start by saying: no switching is done:
+        switching = false;
+        rows = table.rows;
+        /*Loop through all table rows (except the
+        first, which contains table headers):*/
+        for (i = 1; i < (rows.length - 1); i++) {
+          //start by saying there should be no switching:
+          shouldSwitch = false;
+          /*Get the two elements you want to compare,
+          one from current row and one from the next:*/
+          x = rows[i].getElementsByTagName("TD")[n];
+          y = rows[i + 1].getElementsByTagName("TD")[n];
+          /*check if the two rows should switch place,
+          based on the direction, asc or desc:*/
+          if (dir == "asc") {
+            if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+              //if so, mark as a switch and break the loop:
+              shouldSwitch = true;
+              break;
+            }
+          } else if (dir == "desc") {
+            if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+              //if so, mark as a switch and break the loop:
+              shouldSwitch = true;
+              break;
+            }
+          }
+        }
+        if (shouldSwitch) {
+          /*If a switch has been marked, make the switch
+          and mark that a switch has been done:*/
+          rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+          switching = true;
+          //Each time a switch is done, increase this count by 1:
+          switchcount++;
+        } else {
+          /*If no switching has been done AND the direction is "asc",
+          set the direction to "desc" and run the while loop again.*/
+          if (switchcount == 0 && dir == "asc") {
+            dir = "desc";
+            switching = true;
+          }
+        }
+      }
+    }
+  </script>
+
+  <div class="txt-col doc-reduced hide" id="item-Apollo">
+    <div class="row info-row-header">
+      <a class="col-6 button-minimize button-hide">Minimize</a>
+      <a class="col-md-6 fullScrButton button-full button-show">Full Screen</a>
+      <a class="col-md-6 col button-pdfClose">Close</a>
+      <object data="https://drive.google.com/file/d/1mR53S5Tja0SlJDcNTeUF0nWxKCgfz42u/preview">
+        <embed src="https://drive.google.com/file/d/1mR53S5Tja0SlJDcNTeUF0nWxKCgfz42u/preview" />
+            <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://drive.google.com/file/d/1mR53S5Tja0SlJDcNTeUF0nWxKCgfz42u/preview">View the PDF</a>.</p>
+        </embed>
+      </object>
+    </div>
+  </div>
+  <div class="txt-col doc-reduced hide" id="item-Apollo1">
+    <div class="row info-row-header">
+      <a class="col-6 button-minimize button-hide">Minimize</a>
+      <a class="col-md-6 fullScrButton button-full button-show">Full Screen</a>
+      <a class="col-md-6 col button-pdfClose">Close</a>
+      <object data="https://drive.google.com/file/d/1mR53S5Tja0SlJDcNTeUF0nWxKCgfz42u/preview">
+        <embed src="https://drive.google.com/file/d/1mR53S5Tja0SlJDcNTeUF0nWxKCgfz42u/preview" />
+            <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://drive.google.com/file/d/1mR53S5Tja0SlJDcNTeUF0nWxKCgfz42u/preview">View the PDF</a>.</p>
+        </embed>
+      </object>
+    </div>
+  </div>
+  <div class="txt-col doc-reduced hide" id="item-AtHomeDuhoang">
+    <div class="row info-row-header">
+      <a class="col-6 button-minimize button-hide">Minimize</a>
+      <a class="col-md-6 fullScrButton button-full button-show">Full Screen</a>
+      <a class="col-md-6 col button-pdfClose">Close</a>
+    </div>
+  </div>
+  <div class="txt-col doc-reduced hide" id="item-AtHomePheSophon">
+    <div class="row info-row-header">
+      <a class="col-6 button-minimize button-hide">Minimize</a>
+      <a class="col-md-6 fullScrButton button-full button-show">Full Screen</a>
+      <a class="col-md-6 col button-pdfClose">Close</a>
+    </div>
+  </div>
+  <div class="txt-col doc-reduced hide" id="item-AtThasnai">
+    <div class="row info-row-header">
+      <a class="col-6 button-minimize button-hide">Minimize</a>
+      <a class="col-md-6 fullScrButton button-full button-show">Full Screen</a>
+      <a class="col-md-6 col button-pdfClose">Close</a>
+    </div>
+  </div>
+  <div class="txt-col doc-reduced hide" id="item-AtTheStudioDuHoang">
+    <div class="row info-row-header">
+      <a class="col-6 button-minimize button-hide">Minimize</a>
+      <a class="col-md-6 fullScrButton button-full button-show">Full Screen</a>
+      <a class="col-md-6 col button-pdfClose">Close</a>
+    </div>
+  </div>
+  <div class="txt-col doc-reduced hide" id="item-BunthengDraws">
+    <div class="row info-row-header">
+      <a class="col-6 button-minimize button-hide">Minimize</a>
+      <a class="col-md-6 fullScrButton button-full button-show">Full Screen</a>
+      <a class="col-md-6 col button-pdfClose">Close</a>
+    </div>
+  </div>
+  <div class="txt-col doc-reduced hide" id="item-Burma">
+    <div class="row info-row-header">
+      <a class="col-6 button-minimize button-hide">Minimize</a>
+      <a class="col-md-6 fullScrButton button-full button-show">Full Screen</a>
+      <a class="col-md-6 col button-pdfClose">Close</a>
+      <object data="https://drive.google.com/file/d/1N-6h9GwMod9lKXibuP-btohoEfnUSi-3/preview">
+        <embed src="https://drive.google.com/file/d/1N-6h9GwMod9lKXibuP-btohoEfnUSi-3/preview" />
+            <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://drive.google.com/file/d/1N-6h9GwMod9lKXibuP-btohoEfnUSi-3/preview">View the PDF</a>.</p>
+        </embed>
+      </object>
+    </div>
+  </div>
+  <div class="txt-col doc-reduced hide" id="item-BurmaPamphlets">
+    <div class="row info-row-header">
+      <a class="col-6 button-minimize button-hide">Minimize</a>
+      <a class="col-md-6 fullScrButton button-full button-show">Full Screen</a>
+      <a class="col-md-6 col button-pdfClose">Close</a>
+      <object data="https://drive.google.com/file/d/18aoKlU7KcSETP4dOBzRbhLzZ9Efek3z4/preview">
+        <embed src="https://drive.google.com/file/d/18aoKlU7KcSETP4dOBzRbhLzZ9Efek3z4/preview" />
+            <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://drive.google.com/file/d/18aoKlU7KcSETP4dOBzRbhLzZ9Efek3z4/preview">View the PDF</a>.</p>
+        </embed>
+      </object>
+    </div>
+  </div>
+  <div class="txt-col doc-reduced hide" id="item-Calligraphy">
+    <div class="row info-row-header">
+      <a class="col-6 button-minimize button-hide">Minimize</a>
+      <a class="col-md-6 fullScrButton button-full button-show">Full Screen</a>
+      <a class="col-md-6 col button-pdfClose">Close</a>
+    </div>
+  </div>
+  <div class="txt-col doc-reduced hide" id="item-Cambodia">
+    <div class="row info-row-header">
+      <a class="col-6 button-minimize button-hide">Minimize</a>
+      <a class="col-md-6 fullScrButton button-full button-show">Full Screen</a>
+      <a class="col-md-6 col button-pdfClose">Close</a>
+      <object data="https://drive.google.com/file/d/1oZDS46wmvU72lculmzy79Gj8MSwocNsx/preview">
+        <embed src="https://drive.google.com/file/d/1oZDS46wmvU72lculmzy79Gj8MSwocNsx/preview" />
+            <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://drive.google.com/file/d/1oZDS46wmvU72lculmzy79Gj8MSwocNsx/preview">View the PDF</a>.</p>
+        </embed>
+      </object>
+    </div>
+  </div>
+  <div class="txt-col doc-reduced hide" id="item-InTheBathroom">
+    <div class="row info-row-header">
+      <a class="col-6 button-minimize button-hide">Minimize</a>
+      <a class="col-md-6 fullScrButton button-full button-show">Full Screen</a>
+      <a class="col-md-6 col button-pdfClose">Close</a>
+    </div>
+  </div>
+  <div class="txt-col doc-reduced hide" id="item-InterviewManitSriwanichpoom">
+    <div class="row info-row-header">
+      <a class="col-6 button-minimize button-hide">Minimize</a>
+      <a class="col-md-6 fullScrButton button-full button-show">Full Screen</a>
+      <a class="col-md-6 col button-pdfClose">Close</a>
+    </div>
+    <div class="row info-row-text">
+        <b>Hunter Panther Deerfield</b>: I really appreciate you taking the time to sit down with me. I’ve read a number
+        of your interviews, and some of what came up in other interviews I wanted to ask you more about, and other
+        more well-known subjects, like your Pink Man series, I didn’t want to ask you about, because you can find
+        that information elsewhere. So, my first question is: you were one of the selected artists to show at
+        Thailand's first Pavilion at the Venice Biennale. What was that experience like?
+        <br>
+        <br>
+        <b>Manit Sriwanichpoom</b>: I think the Biennale itself is quite interesting. You can see a lot of the world
+        there. Because it's one of the most important international art expos, it’s good to see artwork from many
+        corners of the world, which is not so easy to see otherwise. Every pavilion from each country represents
+        their best artists, so it’s interesting to see what’s going on. But like art festivals everywhere, it has
+        a hierarchy. If you come from a bigger country you can probably have the best pavilion because you have
+        the budget to help you, or you build your own pavilion, or rent from the Italian government. But if you
+        come from a poor country, you may have to rent a warehouse to help insert yourself in order to be seen.
+        It's a big festival, so if you're from Germany, or even if you're from Australia, you have your own
+        pavilion. All the European countries have their own pavilions.
+        <br>
+        <br>
+        <b>HPD</b>: Did Thailand have its own building?
+        <br>
+        <br>
+        <b>MS</b>: No, what we had to do is because we didn’t have enough budget to rent a proper pavilion, we had to
+        build a pavilion ourselves. Like a makeshift pavilion, a shelter. It's more like guerrilla-style, you just
+        go there and set up your tent, and just show your artwork. We don't have the budget, that was the first
+        time we went there, so everything we have to build it. And it's a knock down structure with vinyl sheets
+        to cover our artworks. But I think for me it's cool. I didn't expect us to have a fancy pavilion or
+        anything. Even today, we can't afford a pavilion, it's too expensive. You see Japan, or even Korea, let's
+        say the big countries are able to afford. I don't know whether China has its own pavilion yet…
+        <br>
+        <br>
+        <b>HPD</b>: Do you remember any particular moments walking around, or seeing any artists that you were interested
+        in at Venice?
+        <br>
+        <br>
+        <b>MS</b>: I think it's really nice to see friends from other countries. Because in art circles we get to meet
+        people when we go to festivals. You are kind of networking, as well, not just showing your art. Networking
+        with other curators or galleries, so besides just seeing good art it's an opportunity for artists to do
+        networking.
+        <br>
+        <br>
+        <b>HPD</b>: My next question is that I want to ask about the role of humor in your work. With the Pink Men
+        series, and other work as well, there's a dark irony. I’m wondering where your sense of humor is coming
+        from. How did you develop your sense of humor?
+        <br>
+        <br>
+        <b>MS</b>: I think Thailand likes the term happiness [its often called “The Land of Smiles”]. People like to live
+        in happy moments, they don't like being stressed or having unpleasant feelings. To be able to live your
+        life happily, you need to have a sense of humor. People try to relax and make fun of everything. When you
+        talk to people, they are always making fun of each other, amongst their peers, and even making fun of
+        people in power. And when you look at art, especially in folk art — not in the official art, but in the
+        folk art — you know they all make fun of everything. That's how people can make their day pass, because
+        they can feel that, okay, their life is not horrible. I feel this sense of humor is helping everyone to
+        survive and get through their day-to-day.
+        <br>
+        <br>
+        <b>HPD</b>: So, it's not some extra, or unnecessary thing, but vital to life and death.
+        <br>
+        <br>
+        <b>MS</b>: Yes. You see, probably all of Southeast Asia people live like that. You go to the Philippines, or
+        Indonesia, they know how to make fun of people. And when you look at the folk art, you can see they make
+        fun of and challenge the rulers. And if you go back to the stories and folktales, you realize that they
+        make fun of a lot of things. When you read, or when you listen to music, even Luk Thung, country music,
+        also make fun of the ‘power that be.’ If you are poor, you make fun of the rich people. Or, you make fun
+        of yourself, and when you make fun of yourself, you feel okay. Because that is maybe part of human nature.
+        And also, it goes along well with Buddhism, which says you don't take your life too seriously.
+        <br>
+        <br>
+        <b>HPD</b>: You made a film, “Shakespeare Must Die,” which was seen as critical of the government, and censored
+        here in Thailand. And then you made a film about the film called “Censor Must Die” that was allowed to be
+        shown here. Can you tell me a little bit about how that happened?
+        <br>
+        <br>
+        <b>MS</b>: I think it's simple. Since we sued the censorship board already, with one case in the court, maybe
+        when we submitted Censor Must Die, they didn’t want another case [laughs]. They just found another way to
+        let it go, because they know that we will never give up, and we will never give in. We’ll never surrender,
+        and so we fight. Also, it’s not a fun thing for anyone to have it be court, even if you are right or
+        wrong, so that is one of the reasons that they didn’t want another case. So, then they try to find a way
+        to pass it by. Since the film is produced from real event, this follows a category that is exempt from
+        censorship. When they gave us this reason, this reason might be cited by us now in the future. We push the
+        censorship line into their territory, because it's never been this case before. Already, so many
+        documentaries had been submitted, produced like ours from real events, and had been censored. But this is
+        one of the cases which now, step by step, we can push back into the censor’s territory.
+        <br>
+        <br>
+        <b>HPD</b>: So, it is a precedent that you can use now on other films. That's great. I read somewhere that there
+        was a Hollywood film called “The Beach” that was changing the landscape of a bay called Maya Bay, and that
+        you fought back over this. Can you tell me a bit more about what was happening? Why were they changing the
+        local landscape?
+        <br>
+        <br>
+        <b>MS</b>: When The Beach production came to Thailand, they looked for a location to fit their perception of a
+        tropical beach. That means a tropical beach must have coconut trees, which is ridiculous, because if you
+        travel to the south, to the islands, they don't look like that. But they wanted to plant coconut trees
+        anyway, for the production value. So, they chose Maya Bay, and went to the authorities to get permits. And
+        we know that they broke the law, because in the law it protects the landscape, no altering is allowed on
+        those pristine islands. But because they have a lot of money, they said they “donated” the money to the
+        authorities, and they said they created jobs for local people. Anyway, they bypassed the law, and we
+        disagreed and so we fought that, and it became a campaign. The situation became nasty because 21st Century
+        Fox didn't want to step back, and we even told them that they should use CG [Computer Graphics]. If they
+        can make Space Odyssey, if they can make Star Wars, what is the difficulty in making a fake beach? But the
+        producer said that it was too expensive for them. That means they can't pay for the CG, but they can pay
+        to destroy our nature for their own “tropical” scene. So, you can see how a big company with a lot of
+        money can destroy other countries.
+        We even took this to the US Embassy, trying to complain about how an American company was destroying this,
+        and even bribed the local government to get their business done. You have to have the law. This law is
+        implemented everywhere. But they had a lot of money, and they had PR. And we were just normal people. We
+        didn’t have lobbyists. We don't have a PR Company working for us. So, who do you think is going to win?
+        So, after that, they could do whatever they wanted. They shot the film; they finished the film. But
+        because what happened to them… what happened to Leonardo DiCaprio, and the film’s director, [Danny Boyle]
+        this case stuck in their minds. DiCaprio has tried to fix this, to donate, to set up Green World Rising,
+        and to whitewash what he did to our country, to the nature. But by then the case had passed by for twenty
+        years. And now the courts say that 21st Century Fox has to pay restoration for the beach. But after twenty
+        year. Forget it. I mean, how will justice prevail after twenty years? I mean belated justice is an
+        injustice in itself.
+        That's what happened, but we became villains because we obstructed the film. They called us an NGO, but we
+        are not an NGO, we are just artists. But because we lose, they point to us and say that we just wanted to
+        be known, because of a celebrity like DiCaprio. But as for me, I don't care who the fuck he is. He can
+        make millions in the US, it doesn't matter, I have nothing to do with that. But then, let's say this
+        “moral consciousness” stuck in these people’s minds even today. And when you ask the question about what
+        happened during those days, they are going to freak out saying, “I did everything right, above the law,
+        etc, etc.” They’re so defensive. But already the damage is done. What can they do? I already said that
+        they could save the nature. They didn’t have to do it the way they did. They could just go there and
+        shoot. Because I am a filmmaker, I know how to do that. You shoot something there, and the rest you do
+        with CG, computer graphics.
+        <br>
+        <br>
+        <b>HPD</b>: How did you find out about this incident at all?
+        <br>
+        <br>
+        <b>MS</b>: They did the PR for the film, and we realized that this was not just a simple thing. And Ing K
+        [Manit’s partner] used to be a beach bum over there. She used to sleep on the beach. It’s so beautiful
+        there.
+        <br>
+        <br>
+        <b>HPD</b>: Can you tell me about social activism in your work? And also, how that relates to your
+        photojournalism.
+        <br>
+        <br>
+        <b>MS</b>: I used to do photojournalism, but then I realized that when you just report, it's not enough. You have
+        to take action. And so, then I decided, instead of just running after the story, it's better to create the
+        story. So, I changed the strategy. If you wanted to stop something that might happen, because the
+        government policy is wrong, then you have to do something. You have to make people aware. To make a
+        dialogue. This is the way; to try to make people concerned with what's going on, and to understand the
+        situation.
+        <br>
+        <br>
+        <b>HPD</b>: Are there particular artists who are or activists or people that you are inspired by or particularly
+        like?
+        <br>
+        <br>
+        <b>MS</b>: I think I’m inspired by the art, for instance, of Barbara Kruger. I think she is very strong. And even
+        the Guerrilla Girls. I like artists from the 1970s, when they did all the the movements. Also, people like
+        Mahatma Gandhi, Martin Luther King Jr., and even Aung San Suu Kyi. The way these people fight is very
+        inspiring.
+        <br>
+        <br>
+        <b>HPD</b>: A question that Hans-Ulrich Obrist always asks, that I read in a book of interviews that he did, is a
+        question that I now want to ask you. What is an unrealized project that you have? Something that you would
+        like to do but haven't done yet.
+        <br>
+        <br>
+        <b>MS</b>: It’s too big for me, but a photography museum. With a priority on local knowledge. Understand local
+        photography first, because international work you can find on the internet. But this would work on saving
+        local knowledge, local archives. That is the most important, because this stuff is gone every day.
+        HPD: A really striking feature of Bangkok's developing urban landscape is the emergence of all these
+        shopping malls, springing up all over the place. How do you feel about this?
+        <br>
+        <br>
+        <b>MS</b>: I just came back from a public hearing from the city planning group, and my concern is that in the new
+        group they are drafting, Bangkok is still centralized. So, that's what I voice to the planner. This is not
+        the good idea, because we talk about decentralization, not just only about political power, but also
+        economic power. We have to spread it out. We have to distribute this wealth and economy to the other
+        cities. Otherwise, Bangkok is going to have more and more problems. I gave them the example of old cities
+        like Paris, or even New York, they stop growing. Also, we don’t know in a twenty-year time what the
+        economy will be like. Since its the digital era, many jobs and many businesses that we have today might
+        disappear, and our lifestyle might be rapidly changed. So, I'm not sure the draft their planning is
+        relevant, also my concern about decentralization is still an issue.
+        <br>
+        <br>
+        <b>HPD</b>: And shopping malls are for you an example of centralization?
+        <br>
+        <br>
+        <b>MS</b>: Yes, because of the amount of consumption by city people. It’s scary. I think this has to be a
+        question for everyone, for every family, for every country, about how much we consume every day. Do you
+        really need that much? Things that you never use. Why do you have them? People never have that question
+        themselves. We have to make people aware of this. Capitalism might not be growing without consumerism.
+        Consumerism is the mechanism that makes capitalism grow. So, if you push people to consume less, it means
+        that capitalism grows slowly. But why do you need it to go fast? Like so many young people want to be
+        billionaires in a few years. Why? What's the good of that? We can name so many billionaires, but what have
+        they done for the world? They just have money, that's all. But when you look through civilization, what
+        have created? Florence without the Medicis wouldn't be the Florence today. But what that means is that if
+        you have money, the question becomes how you are going to use it. That’s the question for Thailand. We
+        have lots of millionaires and billionaires, but what have they done for the country? They own businesses,
+        okay, they create jobs and so on, but what else do they do?
+        <br>
+        <br>
+        <b>HPD</b>: Leo Tolstoy said that the way to get people to get along is to ask them what they love, and what they
+        hate. Because often we love and hate similar things. So, I just want to ask you, not about art, but just
+        about yourself: what do you love and what you hate?
+        <br>
+        <br>
+        <b>MS</b>: [laughs] First thing I have to love is humans. I have to love animals. I have to love our planet.
+        Because if you don't have love you will destroy everything. I talk about this in a broad meaning. When I
+        think about loving a particular thing, that means I have a bias, because then I hate other things. We care
+        about the planet, and we don't want to destroy it. And how are we going to accomplish that? We love
+        animals and so we care about animals, even though they don’t belong to us. Anywhere in this world. When
+        you learn about something happening to an animal, you have feelings. So, when you say love to the human,
+        regardless of race, no matter if you're white, or black, or yellow, or short, or tall, that’s what I care
+        most about.
+        <br>
+        <br>
+        <b>HPD</b>: And what do you hate?
+        <br>
+        <br>
+        <b>MS</b>: I hate people who have no love.
+        <br>
+        <br>
+        [laughs]
+        <br>
+        <br>
+        <b>MS</b>: Because no love kills everything. People kill each other today because they have no love. Why do you
+        kill the other person? Because you are worried the other person is going to steal something from you? Why
+        are white supremacists worried about black people? Because they worry that the black people are going to
+        steal something from them. Because they hate them, then they can be able to kill them. We bomb other
+        people because we are worried that they are going to do something to us. Because we don't have much love.
+        We don't have love anymore. It’s very simple. And I hate people who have no love. That's the problem, and
+        I try to love them, but I'm not sure that I can.
+        <br>
+        <br>
+        <b>HPD</b>: Is there anything final that you'd like to say?
+        <br>
+        <br>
+        <b>MS</b>: I think everyone can feel that our world today is very hard to live in. Conflict is everywhere. The
+        weather in Bangkok is hotter than ever before. So, I'm worried we won't be able to find solutions to save
+        our planet fast enough. When we talk about saving the planet, it’s not just about humans, but saving the
+        whole planet. And I don't think we have that consensus, that strong will. So, when you talk about the G20,
+        they still are talking about the carbon tax and that is all. About who is going to gain and who is going
+        to lose. And no issue at all about how we are going to save the world. Everyone just does their business,
+        no matter. When everything is gone, I don't know how they are going to enjoy life. That is the problem.
+        <br>
+        <br>
+        <b>HPD</b>: Well thank you so much for your thoughts, and your openness, and your honesty.
+      </div>
+  </div>
+  <div class="txt-col doc-reduced hide" id="item-InterviewSaiHtinLinnHtet">
+    <div class="row info-row-header">
+      <a class="col-6 button-minimize button-hide">Minimize</a>
+      <a class="col-md-6 fullScrButton button-full button-show">Full Screen</a>
+      <a class="col-md-6 col button-pdfClose">Close</a>
+    </div>
+    <div class="row info-row-text">
+        <b>Hunter Panther Deerfield</b>: I believe it was Leo Tolstoy who said the way to have any two people get along is
+        to ask
+        them what they love and what they hate. We all generally love and generally hate the same things. So, I ask you:
+        what do you love, and what do you hate?
+        <br>
+        <br>
+        <b>Sai Htin Linn Htet</b>: I hate I would say, being restricted, rules, and the restrictions of society. Routines,
+        the normal, the typical. That doesn’t excite me. To be specific, the nine-to-five lifestyle. I have nothing
+        against people that live that way. I totally respect why we have these kinds of boundaries and restrictions in
+        order to control society and put everything in order. But for me as an individual, what I hate the most is
+        boundaries. What I love is destroying the boundaries.
+        <br>
+        <br>
+        <b>HPD</b>: Transgression. Is that a word you would use?
+        <br>
+        <br>
+        <b>SHLH</b>: Yeah, that is a word I would use. For example, I used to limit myself within a boundary, by sticking
+        to photography and being loyal to the restrictions of what that medium can offer. But with time I found it's not
+        enough, I wanted to extend the boundaries. By trying other mediums — for example, painting, videography, anything
+        available to me — I always try to get out of the boundaries.
+        <br>
+        <br>
+        <b>HPD</b>: Is there a particular moment that you remember first coming up against a boundary? And the desire to
+        transgress?
+        <br>
+        <br>
+        <b>SHLH</b>: I have been dealing with that since I was young. It’s not a particular moment, it’s the whole profile
+        of my life. My father is a huge fan of art, his friends are writers, painters, and he used to be a comedian. Not a
+        standup comedian, but a comedian from Burmese theatre. His friend is one of the most famous comedians here. But my
+        father decided for a more practical life, because the artistic industry back then is quite chaotic. They didn’t
+        really have boundaries, they had their own definition of boundaries, quite different from my own definition. So,
+        since I was young, I grew up with books and art, but my dad didn’t want me to be an artist. And not because he
+        hated me creating things, but because he didn’t want me socialized within the art industry. He had a perspective
+        of the industry according to his own experiences, and he didn’t want me to the face the same thing. But voila, two
+        decades later, here I am, doing the things he doesn’t really approve of, so I would say I have to get out of my
+        own boundaries too. So, there's no particular moment, but the flow of life in a way.
+        <br>
+        <br>
+        <b>HPD</b>: If I remember from a previous conversation, your father is a dentist, and your mother is a judge. What
+        does your mother think of your artistic career?
+        <br>
+        <br>
+        <b>SHLH</b>: I wouldn't become who I am without the support of my mom. I mean her emotional support, because she
+        can sense my happiness. My dad doesn’t really understand me, because I'm more introverted, and my dad has OCD. I
+        found that out recently, but I’ve been dealing with it all my life.
+        <br>
+        <br>
+        <b>HPD</b>: You, yourself, have OCD?
+        <br>
+        <br>
+        <b>SHLH</b>: My dad has OCD. I have ADHD-ish. [laughs] I don't know where it comes from. I recently found that he
+        has OCD. When I was young my mom had to transfer to other places because she's a judge, so I ended up with my dad.
+        Since he has OCD, he’s very strict. He likes everything put in order. I'm the opposite of that. I cannot be that
+        organized, I cannot be neat and tidy. And he was always stressed because of working for the government as a
+        dentist. I became his therapist in a way, whenever he came back from work. I was just a kid, eight or nine years
+        old. And he would talk about how stressful his work is. I understand what he's going through, but I had to take
+        everything as a kid. So, I become mature when I'm not supposed to. So, I mean, that's the story of my dad. My mom
+        is the other way. She always supported me. She can sense who I am. I did not really open up to my dad emotionally.
+        Of course, I love him, but I did not really open up to him. We are not coming from a very prestigious or wealthy
+        family. My mom can sense my emotions. She wants me to do whatever will make me happy. I'm choosing this lifestyle
+        which is very unpredictable. The art industry as a whole, you cannot predict anything. And especially this
+        country, anything can happen. If you look at the politics, we don't know what will happen. The next ten days,
+        tomorrow, we can't really predict. A coup d’etat can happen any time. The political situation is not stable. And
+        what I'm doing is not very practical, I cannot really plan anything, but just try to do the best of course. While
+        living this type of lifestyle my mother has been very supportive.
+        <br>
+        <br>
+        <b>HPD</b>: What was the first medium of art that you got interested in?
+        <br>
+        <br>
+        <b>SHLH</b>: The first interaction I had with a medium of art was literature. We have a very small library in
+        Lashio, which is not a very big city in the Shan state. So, I grew up with that. By the time my dad was working I
+        was an only child, so I don't really hang out with other kinds too. So all I did was read, and then some books
+        about the biography of painters, etc. so I'm familiar with literature, painting, and the fact that I had the
+        chance to live with the Mandalay headmaster of the University of Art and Culture, I spent a while at his place….
+        <br>
+        <br>
+        <b>HPD</b>: How was that?
+        <br>
+        <br>
+        <b>SHLH</b>: It was just for a short while, but I got to understand the inner perspective of how an artist’s life
+        is.
+        <br>
+        <br>
+        <b>HPD</b>: How did you end up with the headmaster?
+        <br>
+        <br>
+        <b>SHLH</b>: So, my mom had to move to Mandalay, which was the former second capital after Yangon. So, we moved
+        there when I was seven. My mom was moving but she could not come yet, as there was a procedure for waiting for
+        another judge to come to her place to transfer all the responsibilities etc., so by the time she would have
+        finished that, school would have already begun, so I had to go to Mandalay and stay with the headmaster of the
+        University of Art and Culture. He’s my dad’s friend. I had to stay there for a while, for like five or six months.
+        I went to the same school his daughter went to, which is very close to the mortuary. It was a very creepy feeling.
+        <br>
+        <br>
+        <b>HPD</b>: The University of Art and Culture — this was more traditional art, right?
+        <br>
+        <br>
+        <b>SHLH</b>: Yeah, more traditional art. But back then I didn’t really understand what art was. They mostly relied
+        on technique, not on concepts. So, it's very traditional, typical, propaganda-ish, kind of art. Everything's
+        beautiful. Landscape. Cultural. You know what I mean. But later in my life, I learned about very strong
+        contemporary artists in Myanmar.
+        <br>
+        <br>
+        <b>HPD</b>: And how did you learn about contemporary art?
+        <br>
+        <br>
+        <b>SHLH</b>: I would say that in Myanmar we don't have many institutions to learn about contemporary art. It's all
+        about learning from whatever available sources. The internet, some of the local galleries, Myanm/art, they have
+        some contemporary sources, some libraries. I mean, it's scattered about. It's not like I learned contemporary art
+        in a university or something. It was mainly about educating myself, trying to learn everything by myself. Of
+        course, traveling around workshops and museums really helped. I took part in a few of them. So yeah, that too.
+        <br>
+        <br>
+        <b>HPD</b>: Are there certain artists, artworks, films, or literature that’ve been influential to you?
+        <br>
+        <br>
+        <b>SHLH</b>: Are there particular media that inspire me?
+        <br>
+        <br>
+        <b>HPD</b>: Or people that you’ve been inspired by?
+        <br>
+        <br>
+        <b>SHLH</b>: The first I would say would be photography. And the first and foremost photographer is Daido
+        Moriyama. You know Japanese Photographers. Like we were mentioning the other day, while talking with Kaung Htet
+        [our previous meeting]. I have a huge love for some Japanese photographers. And it started with Daido Moriyama.
+        And then it came to Ikko Narahara, Eikoh Hosoe, and you know, later Shomei Tomatsu — his work “Skin of the
+        Nations” — and Antoine d’Agata. I feel like I'm speaking the same language as these photographers. Another one is
+        the painter Francis Bacon. I would say he's very important in my life too. 
+        And how did I learn about Bacon? Just searching up on YouTube and finding an old documentary about him. And I
+        started buying. When I was in the New York Metropolitan Museum of Art, I couldn't help myself asking who they
+        liked at their bookstore. I asked if they have Francis Bacon books, because I really love him. I would say my
+        inspiration doesn't really come from just one medium. It's a combination of many things. Of course, when I started
+        to show my interest in candid photography — because candid photography is very wild, it doesn't have many rules,
+        it's more about being authentic and being raw — the first name that popped up when I was doing research was Daido
+        Moriyama. So, I with the help of my friends, I bought his book… I forgot the name... that book that has all the
+        work of his… But I looked at it and I didn’t understand it at all. I was like what the fuck. I don't understand
+        it. I looked through it and I put it on the book shelf for a while. And of course, that was several years ago. And
+        when I started to practice photography, I didn't understand art or photography that much. 
+        Later, as I evolved into my photography, my practice, and my knowledge about art, I found that Daido and I speak
+        the same language. It’s his raw prettiness. I don't know, it's like you just click with somebody. You don't really
+        know that person. You don't really know them in real life. It's just like you found a soulmate. It's your
+        instinct, it's your gut. We speak the same language. And from that I got so much inspiration from his work, but I
+        don't copy his personal style at all. I’ll look at his work again, and then I’ll close the book, and I’ll reflect
+        about what it makes me feel like while I'm looking through the work. And I’ll try to remember those feelings and
+        use them whenever I create my work. That's how I developed my first series of work. The monochrome series. Sorry
+        for such a long answer… 
+        Later, when my work got more and more mature, I realized I had set my own boundaries and I didn’t like that. I had
+        to evolve in a way. Why was I doing documentary work in color but only my personal project in black and white? My
+        personal project has to represent me. So that's why it evolved into color. I started to learn about all these
+        experimental films, all these famous cinematographers and famous filmmakers. From the Czech Republic. From
+        everywhere. I started to think about how to show my own emotions in color. So, I went to this workshop in Penang.
+        My mentor there was Maggie Steber, who is a Pulitzer Prize finalist this year. Just learning things from her
+        totally changed me. I can reveal myself and express myself in color photography now.
+        <br>
+        <br>
+        <b>HPD</b>: What did she say? Anything particular?
+        <br>
+        <br>
+        <b>SHLH</b>: You know that there is some power that you can sense from someone. Especially when near them, you can
+        see
+        what kind of person they are. And then you feel like you already learnt something, spiritually. Maggie Steber is
+        that kind of special person for me.
+        The same thing with Antoine d’Agata. I really wanted to join his workshop because I'm a huge fan of his work, so I
+        went to Angkor Photo Festival. I didn't have a chance to join his workshop. My mentor was also great, but I wanted
+        to join Antoine’s, so I just talked to him. His main work is about prostitution, sex, desire, lust. It’s very
+        controversial, emotional work. I only chatted with him. Just being near him, talking for ten or fifteen minutes, I
+        think I learned a lot about many things. It's not about how great of an artist you are. It has to be a combination
+        of both. If you are a shitty human being, it shows in your work. People can sense it, you know. Like your aura
+        itself is an emotional medium, people can sense it. If it's bullshit, they know it's bullshit. So, the people I
+        really admire are a combination of both: great artists and also great human beings at the same time. And Antoine
+        d’Agata, people judge him because his work is mostly about sex, the extremes of the human condition, but he's such
+        a gentleman, So, that's how I learn things. Not through institutions or anything, but sometimes I have this
+        opportunity, so I learn, spiritually. It sounds a bit cliched, but yeah.
+        <br>
+        <br>
+        <b>HPD</b>: I was just yesterday reading Hans-Ulrich Obrist’s book of interviews, which was at Myanm/art, and he
+        said in
+        the introduction that one question he always asks people in all of his interviews: “do you have an unfinished
+        project or an unrealized project that you'd like to do.” So, I’d like to ask you that question: do you have an
+        idea for something you haven't done yet, but that you'd like to do?
+        <br>
+        <br>
+        <b>SHLH</b>: Oh man, yeah of course. I think like — I’m sorry I always try to beat around the bush whenever I
+        answer
+        something because I have more answers to each question — but yeah, I used to think that if I just focus on my own
+        practice I don't really have to care about any other thing, but that’s not how the world works. Now everybody can
+        be a… I totally forgot the name, anyway, the lady shot with Rolleiflex all her life... and then she…
+        <br>
+        <br>
+        <b>HPD</b>: Oh, like the nanny, who did self-portraits in all the mirrors.
+        <br>
+        <br>
+        <b>SHLH</b>: Yeah, I totally forgot her name.
+        <br>
+        <br>
+        <b>HPD</b>: Nan Goldin? Wait no, that's a famous photographer.... [It was Vivian Maier]
+        <br>
+        <br>
+        <b>SHLH</b>: I mean not everyone can be like her. She died and left all her boxes of films. I used to think that
+        way,
+        that I'd just create works and I didn’t really care about what happened to them. But it doesn't work that way.
+        Everybody these days is creating. It’s not that special anymore. I have this whole vision for a project, not just
+        for myself, but somehow, it’s a very important political, environmental project that I’ve developed. And I’m
+        thinking about it right now, by means of a concept, by means of how I’ll execute it, visually, with multi-media,
+        motion films, sounds… I already have this plan. I just cannot materialize it. That frustrates me.
+        <br>
+        <br>
+        <b>HPD</b>: What is that plan?
+        <br>
+        <br>
+        <b>SHLH</b>: It's very related to environmental issues here. I have to do it now. Time is ticking. I have to do it
+        as
+        soon as possible, but the thing is… I don't have the budget for it. It’s very related to what can happen. So, the
+        project I want to do relates to the danger of the environmental situation in Myanmar. It can happen at any time,
+        and I want to work on that. But we don't know when that danger can happen.
+        <br>
+        <br>
+        <b>HPD</b>: You want to do your work before the danger can happen?
+        <br>
+        <br>
+        <b>SHLH</b>: Yeah, I want to find a way that I can have a grant or funding for that. Let’s see whether I can do it
+        or
+        not. I think it would be very important. Not just for myself, but for the country and for the people.
+        <br>
+        <br>
+        <b>HPD</b>: But you wish to be very secretive about the nature of the project, and its purpose?
+        <br>
+        <br>
+        <b>SHLH</b>: Yeah. Sometimes you're talking about it and it doesn’t happen, so what's the point? It will spoil the
+        fun.
+        Of course, as I am working as a curator and as a visual artist, sometimes it's hard. The earning is not there all
+        the time. So of course: the budget. Sometimes you have great plans for a personal project, but you don't have the
+        budget for it.
+        <br>
+        <br>
+        <b>HPD</b>: In your opinion, what does the Myanmar art scene need?
+        <br>
+        <br>
+        <b>SHLH</b>: Institutions. Better institutions. We have a tremendous weakness in state-provided institutions,
+        especially
+        for contemporary art. Myanmar has started to open up. People are saying there are so many possibilities. But we
+        have a University of Art and Culture that doesn't have a photography department. They have a painting department,
+        a cinematography department. Cinematography is like more progressive these days. But here people don't really
+        consider photography as an art. We need more education. For the artists, as well. We need more state-funded art
+        spaces. State-funded artist exchange program. I think what we need is education in every sector. Education is the
+        main component here, so that people know the importance of art. So that artists are more empowered to create,
+        empowered and confident in their creations. That’s what we need for now. 
+        <br>
+        <br>
+        <b>HPD</b>: And what is the importance of art?
+        <br>
+        <br>
+        <b>SHLH</b>: As you may know, especially these days, in the contemporary art industry, social change and art
+        sometimes
+        become companions. Many of the artists have issue-based artworks. I think sometimes it has an impact on social
+        change, too. In Myanmar there are so many things that we need to change, because our traditional and cultural
+        values sometimes aren’t very fitted to the contemporary timeline. We have discrimination based on identity, based
+        on beliefs, based on religion, gender and sexual orientation. And based on age. If you’re young and capable some
+        will think you don’t know as much as someone who’s old and stupid. So, Myanmar is still very closed. We have so
+        many unresolved social issues. 
+        <br>
+        <br>
+        <b>HPD</b>: Unlike the West that's resolved all of its social issues...?
+        <br>
+        <br>
+        <b>SHLH</b>: I mean look at the United States. There are laws and mechanisms that people can report too. We don't
+        really
+        have that kind of rule of law in Myanmar. You already might know about freedom of expression here. Freedom of
+        speech, freedom of press, we don't have that kind of thing fully yet. I think art is a way that is very important
+        for social change. With art we can directly address the audience about what is actually happening. That is why I
+        think art is really important. You know the recent issue with the Reuters journalists [Wa Lone and Kyaw Soe Oo,
+        who were jailed]? And how people responded to it? That's one of the reasons I stepped out of my classroom. I used
+        to teach peace building. After doing that for a while, I thought that the more efficient way to social change is
+        through art. When people are coming to an art space, they are not expecting to learn a lesson. They are not
+        mentally prepared to debate. They just come and enjoy the artwork. If you can deliver something about social
+        change through the artworks, I think that is really wonderful.
+        <br>
+        <br>
+        <b>HPD</b>: Can you talk a bit more about your background in peacebuilding?
+        <br>
+        <br>
+        <b>SHLH</b>: I worked with World Learning for several years, since 2013. I took part in some of the World Learning
+        programs, which is a program in collaboration with the School of International Training (SIT), and so I used to
+        work as a peace educator at an institute called Institute for Political and Civic Engagement, which is based at
+        the American Center. And I worked there for four or five years. I have interests in peacebuilding and conflict
+        transformation, peace education, and advocacy, as I told you the other day. Everything started because there was
+        an organized religious conflict in my hometown. It was organized by an unidentifiable group of people. I think
+        mainly it was a tactic of the military. That's what their strategy is. The whole town isn’t pluralistic, but my
+        family circle is very pluralistic and diverse. We hang out with many different religions and ethics groups. That’s
+        normal for us. So, when the conflict started to happen, all of our family and friends were impacted. I didn’t like
+        that, and I was trying to find the answers, and that's how I came to have a huge interest in peacebuilding. That's
+        how I got interested in resolving the conflict in a positive way.
+        <br>
+        <br>
+        <b>HPD</b>: Amazing. Thank you for these answers. Finally, do you have any questions for me? Or advice for this
+        project
+        that I’m working on?
+        <br>
+        <br>
+        <b>SHLH</b>: How did you start? When did you get the idea to start this?
+        <br>
+        <br>
+        <b>HPD</b>: Essentially, after I finished my studies in Singapore, I was intending to move to Vietnam, to pursue
+        my own
+        art practice. My focus for my thesis was on conceptual art dealing with archives, and I wanted to continue this
+        with my own project. When I started meeting artists in Vietnam, I realized there was a lack of archives and a lack
+        of experimental platforms. But there was also a lot of willingness amongst artists to meet and share their work.
+        It was really the inspiration of the Surrealist magazines that you find in Paris in the 1930s and 1940s — Andre
+        Breton's Minataure, George Bataille's Documents — that gave me the idea to do something like this for Southeast
+        Asia. That’s what set me off on this project. And it has shifted and evolved as I've gone along and realized, “hey
+        I want to include photojournalists, I want to include traditional craft artists, I want to have conversations with
+        academics and people outside of the contemporary art frame,” and so it has organically come to where it is now.
+        <br>
+        <br>
+        <b>SHLH</b>: What is the influence of your grandfather [Mark Shaw]? You mentioned he is a very well known,
+        internationally famous photographer. So, what was your childhood like, living with him, learning from the artist?
+        His influence?
+        <br>
+        <br>
+        <b>HPD</b>: My grandfather died when my father was eight, so I never knew him, and my father really never knew him
+        either. To be honest growing up I was completely uninterested in photography. I was surrounded by it, but I could
+        care less about it. It was only in my studies in Singapore that I realized I could tie myself, genealogically, to
+        my grandfather and that this would open certain doors. Purely as branding or a PR move, not that I really cared at
+        all. Actually, I was able to do an exhibition with Leica of his photographs that got me a free camera. That was
+        very lovely. And then I was able to do my thesis project on archives, relating them to my family's archive. But it
+        was always sort of a sleight of hand that I did. Because emotionally I have no attachment to him, or even really
+        to the images. Or to photography per se. It was never a medium that I was particularly interested in. As I embark
+        upon this project it can be a nice frame to use to describe what it is that I'm doing. My grandfather took lots of
+        images of celebrities and socialites and artists in his time, and he was particularly known for taking candid
+        images, unposed images, and that's something I'm gradually becoming more interested in doing myself. Particularly
+        taking shots of artists with their artworks in their studios. Really though, my relationship with my grandfather
+        is something mentors have more suggested that I bring up, rather than it being naturally at the forefront of my
+        mind.
+        <br>
+        <br>
+        <b>SHLH</b>: It's a stupid question, but what do you want to achieve in life? What do you imagine yourself doing
+        in the
+        future? Because you're young and you're doing so many important things right now, meeting with artists and having
+        so much momentum.
+        <br>
+        <br>
+        <b>HPD</b>: You sound like my PR agent.
+        <br>
+        <br>
+        [laughs]
+        <br>
+        <br>
+        <b>SHLH</b>: You need to start paying me. I mean like, now you are twenty-one. Twenty-two?
+        <br>
+        <br>
+        <b>HPD</b>: Twenty-three. I'm old, man.
+        <br>
+        <br>
+        <b>SHLH</b>: Old, yeah. I used to say when I was twenty-three that I was old. But like now you’ve started to
+        engage with
+        artists from Asia, and you’re trying to do experimental approaches. After this project what do you want to do
+        next? Like you asked me, what is the thing you really want to do?
+        <br>
+        <br>
+        <b>HPD</b>: Well I'm still interested in working with my grandfather's archive. But more thorough the lens of
+        poetry.
+        Poetry and philosophy are my first loves and I think that I am feeling a pull back to really rigorously both
+        engage with philosophy, but also rigorously engage with poetry. And whether that engagement is through an abstract
+        frame like conceptual art, or through something more comparatively straightforward as writing, I'm not yet sure.
+        But I think that's generally where things would lead me. I'm also just interested in having conversations and
+        seeing where they go. I think long-term I would be very grateful and eager to have conversations with people
+        across different disciplines as diverse as politics, religion, etc. and I don't know what the containers… I don't
+        know what the excuses for those conversations might be... but I'd be interested in trying to have them. Just
+        learning. I guess I'm curious. I just want to learn about things.
+        <br>
+        <br>
+        <b>SHLH</b>: Never lose the wonder. That's the thing.
+        <br>  
+    </div>
+  </div>
+  <div class="txt-col doc-reduced hide" id="item-InterviewYuYuMyintThan">
+    <div class="row info-row-header">
+      <a class="col-6 button-minimize button-hide">Minimize</a>
+      <a class="col-md-6 fullScrButton button-full button-show">Full Screen</a>
+      <a class="col-md-6 col button-pdfClose">Close</a>
+    </div>
+    <div class="row info-row-text">
+        <b>Hunter Panther Deerfield</b>: How did you get into taking photos?
+        <br>
+        <br>
+        <b>Yu Yu Myint Than</b>: Photography is not my first career. My first career was as a teacher's trainer. I was in
+        Hong Kong for postgraduate study, and everything was stressful. I lived in a really small apartment. I was the
+        last student in class. I didn’t want to be at home because it was too small, I didn’t want to be in school because
+        it was too stressful. So, I would just sit in a park. It was a very cheap area where I could afford my apartment
+        and so my neighborhood was very rough. I met a lot of construction workers who were not from Hong Kong. In Myanmar
+        if you make eye contact, you just smile. Because it was my first overseas experience, whenever I met my neighbors,
+        they would look at me and I would look at them and I would smile. But they thought I was flirting with them, and
+        they thought I was a Filipino housemaid looking for sex work part-time. So, they would give me a little strip of
+        paper. They were approaching me with a time and their phone number and this kind of stuff. The first time I didn't
+        know what it was about, but my friend told me “oh, they are approaching you for this purpose” and I was really
+        freaked out. I didn’t know how to respond. I was still quite young, and it was my first experience being overseas,
+        and so I started to bring my camera to pretend that I was a tourist. Whenever I went out, I would have my camera.
+        So, this is how I started photography. With street photography. Yeah, it's crazy. Funny experience…
+        <br>
+        <br>
+        <b>HPD</b>: And after?
+        <br>
+        <br>
+        <b>YY</b>: After teaching I came back. I worked for two years as a teacher’s trainer in Yangon and became a
+        hobbyist photographer. I became more and more serious, and then a reportage workshop came up and I applied, and I
+        got in. Even though I was just a hobbyist I wanted to tell a story. About myself, about other people, but I didn’t
+        know how to tell the story with no training. It was a three-month long workshop and I was the only amateur. Others
+        were professional photographers working for newspapers, some from Bangladesh some from Norway, but I learnt a lot
+        from them. After that workshop I decided “Ok, I’ll quit my job.” I decided to become a photographer, but I had no
+        platform and I had to get experience and build up a portfolio. So, I applied to the Myanmar Times to be a staff
+        photographer, because I thought that being a photojournalist, I would have a lot of room to tell stories. I worked
+        there for eleven months but working with the newspaper didn't give a me lot of room for telling stories because
+        the newspaper worked on daily news and I'm more into in-depth stories, features, long-form documentary. So I quit
+        my job at the Myanmar Times and started working for Myanmar Deita. There I have more freedom to learn new things,
+        such as visual storytelling and curation. I think I made the right choice.
+        <br>
+        <br>
+        <b>HPD</b>: What is Myanmar Deita?
+        <br>
+        <br>
+        <b>YY</b>: Myanmar Deita is an organization that develops resources for local photographers and filmmakers. We do
+        curation, we do workshops, and we are now trying to build up the first photography school in Myanmar, which will
+        start in October 2019. This year we will start with women photographers, the next year we will try to have mixed
+        gender classes.
+        <br>
+        <br>
+        <b>HPD</b>: You mentioned a workshop that inspired you to quit your previous job and focus on photography, what
+        about that workshop was so inspiring?
+        <br>
+        <br>
+        <b>YY</b>: In that workshop we had to produce a long-form story that was two-to-three months long, so I decided to
+        do a positive story on the conflict area in the middle of Myanmar. I tried to build up a positive story connecting
+        the two groups that experienced the conflict. But I didn’t have journalistic experience. I went there as a
+        photographer with no connections. I built up trust and I had a lot of struggles and challenges. A lot of special
+        police would follow me, and I had a lot of people stopping me and questioning me. Sometimes people would show up
+        at my hotel room, because it was a sensitive area. I was really freaked out, but I think the more they tried to
+        stop me the more I wanted to finish it. I noticed that was different than my teaching job. If I had struggles or
+        challenges in my teaching career, I would stop for a while. It wasn’t very exciting. But this new experience, the
+        more they tried to stop me, the more I wanted to do it, so this is where I realized I wanted to be. We don't have
+        a lot of chances to know what we’re interested in.
+        <br>
+        <br>
+        <b>HPD</b>: Can you tell me about Thuma [the all-women Burmese photography collective] and how that came to be?
+        <br>
+        <br>
+        <b>YY</b>: I used to work for The Myanmar Times. Most of my friends in the community were male photographers. As I
+        told you, I’m interested in doing long-form photojournalism. At that time, I was working on a project and I wanted
+        to get feedback from my peers. But it was so difficult to get. Mostly they hung out at beer stations. I do drink
+        beer, but I found that we had a friendly community, but not the kind of community that gave honest feedback and
+        took work really seriously. I need that kind of community. I didn’t find enough support. Not that my peers weren’t
+        serious, but just it wasn’t what I wanted to get.
+        Also, when I met my mentor at the workshop that I had attended, she told me she wanted to teach a woman-only
+        workshop in Myanmar. But at that time, I can only count three women photographers in the scene. That’s not enough
+        to bring her to Myanmar to do a workshop. She asked me to collect portfolios of women photographers, but I could
+        not find good portfolios that suited the qualifications of the workshop. I thought we were lacking women
+        photographers, and I also wanted this kind of community, and so I thought I should start an informal women
+        photographers’ meetup, so anyone could be a photographer, as I myself started as a hobbyist. And so, I started an
+        informal meetup and anyone could join who was interested. We met every month and after nine months we were lucky
+        to have a basic storytelling workshop for women photographers, with the help of my friend from Chile. After that
+        workshop I found that the other women were also interested in storytelling, and although the levels were
+        different, I thought it was ok, we can build everyone’s level as I started very low, and as long as you’re
+        passionate it’s ok. We all had this common ground, we all wanted to tell a story, so why didn’t we start a
+        collective? We started with the eight women from that workshop. It started informally because we didn’t know each
+        other personally. We did a pilot period for the first five months. We ran a workshop where we shot a mini-story so
+        I could know that they were really serious about storytelling. We set a deadline, and some met the deadline, and
+        some didn’t meet the deadline. Maybe I’m a little bit bitchy because those who didn’t meet the deadline were out.
+        Now we have five women photographers and we officially launched Thuma collective because we’re strong and
+        passionate and really want to be storytellers. We started in October of 2017.
+        <br>
+        <br>
+        <b>HPD</b>: Do you think photojournalism allows for a particular kind of storytelling that writing or film or
+        painting or other arts cannot provide?
+        <br>
+        <br>
+        <b>YY</b>: I think photojournalism can tell a story, but there are lots of other ways to tell a story. But I don't
+        call myself a photojournalist, I'm a storyteller. The type of storytelling I do is not always photojournalism.
+        Some stories need a photojournalistic way of telling, some ways we may need a fictionalized way of telling.
+        Sometimes we can tell the story directly, sometimes we have to tell the story indirectly. For example, the story I
+        worked on with a girl who was abused as a housemaid. When I met her, she said that she hated the pictures of her
+        that were in the newspaper. A lot of people told her story directly showing her bruises, her scars, this haunts
+        her memory and that re-traumatizes her. It's not wrong to tell her story directly but what about the people who
+        we’re reporting on? She has been in this trauma, so by telling this story again and again directly this only
+        re-traumatizes her. I decided to tell the story in a fictionalized way, not very journalistic, so I recreated her
+        memories. There were lots of ways to tell a story, I won’t say which ones are better, but we have to think about
+        which ways are effective for what kinds of stories. I don't categorize myself as a photojournalist or a reportage
+        storyteller or a fictionalizer or a fine artist. I don't categorize myself as some stories I choose the style of
+        reportage because I need to show it that way. But some stories I need to do another way.
+        <br>
+        <br>
+        <b>HPD</b>: Can you tell me about this photo series [Jigsaw]?
+        <br>
+        <br>
+        <b>YY</b>: Mostly I pick stories where I can reflect myself. This story I picked because I was in Bangladesh for
+        seven months. I didn't have a lot of friends. Although Myanmar and Bangladesh are neighbor countries, I find it
+        difficult to dwell with the communities in Bangladesh. I felt like a stranger, and I hated this alienation and
+        isolation. I wanted to do something similar to how I felt, so I was shooting symbolic pictures of alienation and
+        isolation. I came to know the Somali community when I went to the immigration office to extend my visa. Because
+        Bangladesh is a very bureaucratic country, even to extend a visa I had to go to immigration offices more than ten
+        times. The waiting time is three hours, sometimes four hours, sometimes the whole day. I met my subjects for
+        [Jigsaw] there. They were also international students waiting to extend their student visas. I met with them, I
+        hung out with them, and found that I had similar experiences with them. So, I mixed my emotions with theirs. I
+        don't think that's a “photojournalistic” way of doing things, because it’s pouring out my feelings into their
+        life. If I consider this a photojournalistic series, it’s not fair because I am projecting my isolation and
+        alienation. Maybe they're not isolated as I'm isolated. So, [Jigsaw] is a reflection of myself on the Somali
+        community.
+        <br>
+        <br>
+        <b>HPD</b>: What did you learn about that community? Did any stories stick out?
+        <br>
+        <br>
+        <b>YY</b>: Mostly they told me about the discrimination they are facing in Bangladesh. That really shocked me
+        because we are in a ‘dark’ country. Myanmar, Bangladesh. We have the same experience being discriminated against
+        by color. For example, in Myanmar we have less opportunities and a lower salary than other international workers,
+        and also in Bangladesh it is the same. Bangladeshis are discriminated against within their country and they also
+        discriminate against Somalians. Bangladeshis talk about being discriminated against, but they also discriminate
+        against other people. I think that's not fair. So that makes me interested.
+        Another thing is that the Somali are missing home. Of course, they are isolated. They don't have friends. They
+        study in a Bangladeshi international school. I visited their class. There was a grouping of local Bangladeshi
+        students. I met with one Somali girl who was sitting in a corner. She was the only Somali girl. Nobody talked to
+        her. Other people were talking, going around. I asked her “do you have friends.” She said, ‘I don't have friends,
+        I have classmates, but they don't talk to me.’ Also, I talked to several Bangladeshi students and they said, “Yu
+        Yu be careful, they are not good people, they make fakes, they do drugs.” Who knows! Bangladeshis also do drugs.
+        Other international people, other foreigners also do drugs. And yet they discriminate against Somali people,
+        saying they are drug dealers, they make fake money. Bangladeshis don't know exactly what it is, but in their mind,
+        they have a ‘black concept’ for the Somali community and they even stopped me from making friends with the Somali.
+        Bangladeshi people said they never talked with them. Even my teacher from school said, ‘oh Yu Yu be careful.’ Why?
+        We are the same. So, I met with a bunch of international students, and from them my friendship circle got bigger
+        and bigger. I met with ten guys and five girls, and they took me to their friends’ homes and their cousins’ homes.
+        I visited their houses, and farewell parties, and birthday parties and their school, and this kind of stuff. It’s
+        different from my experience. For me I don't have a community. I am isolated and alienated. But for them they have
+        their own community and they are creating their own bubble. So that’s my impression of how they’ve made their life
+        positive.
+        <br>
+        <br>
+        <b>HPD</b>: What were you doing in Bangladesh?
+        <br>
+        <br>
+        <b>YY</b>: I was doing the international photography course at Pathshala.
+        <br>
+        <br>
+        <b>HPD</b>: How long were you there for?
+        <br>
+        <br>
+        <b>YY</b>: Six months, but actually I stayed seven months because I couldn't get a visa to return home.
+        <br>
+        <br>
+        <b>HPD</b>: You couldn't get a visa to return home to your own country?
+        <br>
+        <br>
+        <b>YY</b>: I kind of like officially overstayed because I couldn’t extend my visa.
+        <br>
+        <br>
+        <b>HPD</b>: Where would you like to see your work go? Are there certain goals that you have?
+        <br>
+        <br>
+        <b>YY</b>: I’d like to see my work in book form. Because the book will give you time to think. Once you see
+        through all the pictures, you’ll also have time to re-see and re-think. I’m making a self-published art book. I've
+        already finished the printing, but I need to wait a few more months to start the publication.
+        <br>
+        <br>
+        <b>HPD</b>: What do you think of photography? Of telling stories through cameras. As opposed to telling stories
+        through painting, or poems, or fiction writing?
+        <br>
+        <br>
+        <b>YY</b>: Photography and painting may be similar because we’re telling a story with visuals. But what I think is
+        if you tell a story with a picture it will give you time to think. We see a lot of movies right. I don't remember
+        one scene in my mind. But for example, I have a lot of pictures that stick in my mind. Photography lasts longer
+        than video. Maybe because I’m interested more in photography than other forms of art. And about poetry… I think
+        some people do poetry with images, and so I don't think there are lots of differences in telling stories. With
+        different types of photography, we have prose form or poetry form or reporting form. For example, some pictures
+        are poetic so let’s say it’s poetry. Some pictures are very direct, so let’s say it’s reporting. So, I don't think
+        there’s a lot of differences with words and visuals. But because we have different types of people, some people
+        more easily remember images, some people more easily remember words, some people more easily remember sound… We
+        have different types of learners, so maybe that answers your question or not.
+        <br>
+        <br>
+        <b>HPD</b>: Is there anything else you want to talk about in this interview?
+        <br>
+        <br>
+        <b>YY</b>: In my photographic journey people always tell me that “we tell the story of other people in order to
+        hear from the voiceless.” I don't agree with that. Nobody is voiceless. We just cannot hear them. So, my way of
+        photography is that I’m telling stories, but mostly I’m telling myself. I'm not doing it for other people. I'm not
+        working for the Somali community. I'm not working for the girls who are being trafficked. Actually, we are kind of
+        selfish, as we are working for ourselves. For my kind of photography, I am echoing myself. My position is not that
+        I'm superior to them. If we say that I'm telling their story it means that I’m superior to them. My position in
+        photography is that we are on the same level. We are doing a collaborative job. I’m echoing myself in the stories
+        I’m telling. Sometimes I tell a story directly myself, like I'm shooting my self-portrait, or I'm telling a story
+        by myself. Sometimes I'm telling other people’s stories, to echo myself. I'm not in a higher position than other
+        people I'm shooting. We are on the same level.
+        <br>
+      </div>
+  </div>
+  <div class="txt-col doc-reduced hide" id="item-KirtiWebDraft">
+    <div class="row info-row-header">
+      <a class="col-6 button-minimize button-hide">Minimize</a>
+      <a class="col-md-6 fullScrButton button-full button-show">Full Screen</a>
+      <a class="col-md-6 col button-pdfClose">Close</a>
+    </div>
+  </div>
+  <div class="txt-col doc-reduced hide" id="item-KirtiPrototype">
+    <div class="row info-row-header">
+      <a class="col-6 button-minimize button-hide">Minimize</a>
+      <a class="col-md-6 fullScrButton button-full button-show">Full Screen</a>
+      <a class="col-md-6 col button-pdfClose">Close</a>
+      <object data="https://drive.google.com/file/d/10MfIyNCWh0DzQ6flmWxKXHRsU-y6a_21/preview">
+        <embed src="https://drive.google.com/file/d/10MfIyNCWh0DzQ6flmWxKXHRsU-y6a_21/preview" />
+            <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://drive.google.com/file/d/10MfIyNCWh0DzQ6flmWxKXHRsU-y6a_21/preview">View the PDF</a>.</p>
+        </embed>
+      </object>
+    </div>
+  </div>
+  <div class="txt-col doc-reduced hide" id="item-LuxuryAndRubble1">
+    <div class="row info-row-header">
+      <a class="col-6 button-minimize button-hide">Minimize</a>
+      <a class="col-md-6 fullScrButton button-full button-show">Full Screen</a>
+      <a class="col-md-6 col button-pdfClose">Close</a>
+      <object data="https://drive.google.com/file/d/1dD0zF9iqK6F9mHDsKUkWJyziu7UYNKB8/preview">
+        <embed src="https://drive.google.com/file/d/1dD0zF9iqK6F9mHDsKUkWJyziu7UYNKB8/preview" />
+            <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://drive.google.com/file/d/1dD0zF9iqK6F9mHDsKUkWJyziu7UYNKB8/preview">View the PDF</a>.</p>
+        </embed>
+      </object>
+    </div>
+  </div>
+  <div class="txt-col doc-reduced hide" id="item-LuxuryAndRubble">
+    <div class="row info-row-header">
+      <a class="col-6 button-minimize button-hide">Minimize</a>
+      <a class="col-md-6 fullScrButton button-full button-show">Full Screen</a>
+      <a class="col-md-6 col button-pdfClose">Close</a>
+      <object data="https://drive.google.com/file/d/1dD0zF9iqK6F9mHDsKUkWJyziu7UYNKB8/preview">
+        <embed src="https://drive.google.com/file/d/1dD0zF9iqK6F9mHDsKUkWJyziu7UYNKB8/preview" />
+            <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://drive.google.com/file/d/1dD0zF9iqK6F9mHDsKUkWJyziu7UYNKB8/preview">View the PDF</a>.</p>
+        </embed>
+      </object>
+    </div>
+  </div>
+  <div class="txt-col doc-reduced hide" id="item-MitJaiInnStudio">
+    <div class="row info-row-header">
+      <a class="col-6 button-minimize button-hide">Minimize</a>
+      <a class="col-md-6 fullScrButton button-full button-show">Full Screen</a>
+      <a class="col-md-6 col button-pdfClose">Close</a>
+    </div>
+  </div>
+  <div class="txt-col doc-reduced hide" id="item-MusicVideo">
+    <div class="row info-row-header">
+      <a class="col-6 button-minimize button-hide">Minimize</a>
+      <a class="col-md-6 fullScrButton button-full button-show">Full Screen</a>
+      <a class="col-md-6 col button-pdfClose">Close</a>
+    </div>
+  </div>
+  <div class="txt-col doc-reduced hide" id="item-NewPolitical">
+    <div class="row info-row-header">
+      <a class="col-6 button-minimize button-hide">Minimize</a>
+      <a class="col-md-6 fullScrButton button-full button-show">Full Screen</a>
+      <a class="col-md-6 col button-pdfClose">Close</a>
+      <object data="https://drive.google.com/file/d/1RNYkulqfppYdwi_9vcZLoTO4Z9hqif92/preview">
+        <embed src="https://drive.google.com/file/d/1RNYkulqfppYdwi_9vcZLoTO4Z9hqif92/preview" />
+            <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://drive.google.com/file/d/1RNYkulqfppYdwi_9vcZLoTO4Z9hqif92/preview">View the PDF</a>.</p>
+        </embed>
+      </object>
+    </div>
+  </div>
+  <div class="txt-col doc-reduced hide" id="item-Performance">
+    <div class="row info-row-header">
+      <a class="col-6 button-minimize button-hide">Minimize</a>
+      <a class="col-md-6 fullScrButton button-full button-show">Full Screen</a>
+      <a class="col-md-6 col button-pdfClose">Close</a>
+    </div>
+  </div>
+  <div class="txt-col doc-reduced hide" id="item-PharePonleuSelpak">
+    <div class="row info-row-header">
+      <a class="col-6 button-minimize button-hide">Minimize</a>
+      <a class="col-md-6 fullScrButton button-full button-show">Full Screen</a>
+      <a class="col-md-6 col button-pdfClose">Close</a>
+    </div>
+  </div>
+  <div class="txt-col doc-reduced hide" id="item-PharePonleuSelpak1">
+    <div class="row info-row-header">
+      <a class="col-6 button-minimize button-hide">Minimize</a>
+      <a class="col-md-6 fullScrButton button-full button-show">Full Screen</a>
+      <a class="col-md-6 col button-pdfClose">Close</a>
+    </div>
+  </div>
+  <div class="txt-col doc-reduced hide" id="item-PhuongDucPlays">
+    <div class="row info-row-header">
+      <a class="col-6 button-minimize button-hide">Minimize</a>
+      <a class="col-md-6 fullScrButton button-full button-show">Full Screen</a>
+      <a class="col-md-6 col button-pdfClose">Close</a>
+    </div>
+  </div>
+  <div class="txt-col doc-reduced hide" id="item-PornchaiChaimaMural">
+    <div class="row info-row-header">
+      <a class="col-6 button-minimize button-hide">Minimize</a>
+      <a class="col-md-6 fullScrButton button-full button-show">Full Screen</a>
+      <a class="col-md-6 col button-pdfClose">Close</a>
+    </div>
+  </div>
+  <div class="txt-col doc-reduced hide" id="item-ProposedGardening">
+    <div class="row info-row-header">
+      <a class="col-6 button-minimize button-hide">Minimize</a>
+      <a class="col-md-6 fullScrButton button-full button-show">Full Screen</a>
+      <a class="col-md-6 col button-pdfClose">Close</a>
+    </div>
+  </div>
+  <div class="txt-col doc-reduced hide" id="item-SanMinnStreet">
+    <div class="row info-row-header">
+      <a class="col-6 button-minimize button-hide">Minimize</a>
+      <a class="col-md-6 fullScrButton button-full button-show">Full Screen</a>
+      <a class="col-md-6 col button-pdfClose">Close</a>
+    </div>
+  </div>
+  <div class="txt-col doc-reduced hide" id="item-SanMinnStudio">
+    <div class="row info-row-header">
+      <a class="col-6 button-minimize button-hide">Minimize</a>
+      <a class="col-md-6 fullScrButton button-full button-show">Full Screen</a>
+      <a class="col-md-6 col button-pdfClose">Close</a>
+    </div>
+  </div>
+  <div class="txt-col doc-reduced hide" id="item-Slideshow">
+    <div class="row info-row-header">
+      <a class="col-6 button-minimize button-hide">Minimize</a>
+      <a class="col-md-6 fullScrButton button-full button-show">Full Screen</a>
+      <a class="col-md-6 col button-pdfClose">Close</a>
+    </div>
+  </div>
+  <div class="txt-col doc-reduced hide" id="item-SmallTalk">
+    <div class="row info-row-header">
+      <a class="col-6 button-minimize button-hide">Minimize</a>
+      <a class="col-md-6 fullScrButton button-full button-show">Full Screen</a>
+      <a class="col-md-6 col button-pdfClose">Close</a>
+    </div>
+  </div>
+  <div class="txt-col doc-reduced hide" id="item-SongAndDance">
+    <div class="row info-row-header">
+      <a class="col-6 button-minimize button-hide">Minimize</a>
+      <a class="col-md-6 fullScrButton button-full button-show">Full Screen</a>
+      <a class="col-md-6 col button-pdfClose">Close</a>
+      <object data="https://drive.google.com/file/d/1lbnOR6k3fRH5LDa-FpqpL5kpRUTyAZrF/preview">
+        <embed src="https://drive.google.com/file/d/1lbnOR6k3fRH5LDa-FpqpL5kpRUTyAZrF/preview" />
+            <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://drive.google.com/file/d/1lbnOR6k3fRH5LDa-FpqpL5kpRUTyAZrF/preview">View the PDF</a>.</p>
+        </embed>
+      </object>
+    </div>
+  </div>
+  <div class="txt-col doc-reduced hide" id="item-SouthVietnam">
+    <div class="row info-row-header">
+      <a class="col-6 button-minimize button-hide">Minimize</a>
+      <a class="col-md-6 fullScrButton button-full button-show">Full Screen</a>
+      <a class="col-md-6 col button-pdfClose">Close</a>
+      <object data="https://drive.google.com/file/d/1P3pD0EoA7NAnQn7NaL54BHk6djZY_ALF/preview">
+        <embed src="https://drive.google.com/file/d/1P3pD0EoA7NAnQn7NaL54BHk6djZY_ALF/preview" />
+            <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://drive.google.com/file/d/1P3pD0EoA7NAnQn7NaL54BHk6djZY_ALF/preview">View the PDF</a>.</p>
+        </embed>
+      </object>
+    </div>
+  </div>
+  <div class="txt-col doc-reduced hide" id="item-Thailand">
+    <div class="row info-row-header">
+      <a class="col-6 button-minimize button-hide">Minimize</a>
+      <a class="col-md-6 fullScrButton button-full button-show">Full Screen</a>
+      <a class="col-md-6 col button-pdfClose">Close</a>
+      <object data="https://drive.google.com/file/d/1gIvX5rM3il5PYcsddu1p1LU-2Mm7fd_B/preview">
+        <embed src="https://drive.google.com/file/d/1gIvX5rM3il5PYcsddu1p1LU-2Mm7fd_B/preview" />
+            <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://drive.google.com/file/d/1gIvX5rM3il5PYcsddu1p1LU-2Mm7fd_B/preview">View the PDF</a>.</p>
+        </embed>
+      </object>
+    </div>
+  </div>
+  <div class="txt-col doc-reduced hide" id="item-TheContestedCorners">
+    <div class="row info-row-header">
+      <a class="col-6 button-minimize button-hide">Minimize</a>
+      <a class="col-md-6 fullScrButton button-full button-show">Full Screen</a>
+      <a class="col-md-6 col button-pdfClose">Close</a>
+      <object data="https://drive.google.com/file/d/133RDwpiJrgh-nfuz3ubgVphsLLi_Bymm/preview">
+        <embed src="https://drive.google.com/file/d/133RDwpiJrgh-nfuz3ubgVphsLLi_Bymm/preview" />
+            <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://drive.google.com/file/d/133RDwpiJrgh-nfuz3ubgVphsLLi_Bymm/preview">View the PDF</a>.</p>
+        </embed>
+      </object>
+    </div>
+  </div>
+  <div class="txt-col doc-reduced hide" id="item-TheState">
+    <div class="row info-row-header">
+      <a class="col-6 button-minimize button-hide">Minimize</a>
+      <a class="col-md-6 fullScrButton button-full button-show">Full Screen</a>
+      <a class="col-md-6 col button-pdfClose">Close</a>
+      <object data="https://drive.google.com/file/d/1ORLxYNWcBcPLrl3Rt_lfHDPqtOFK9l6x/preview">
+        <embed src="https://drive.google.com/file/d/1ORLxYNWcBcPLrl3Rt_lfHDPqtOFK9l6x/preview" />
+            <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://drive.google.com/file/d/1ORLxYNWcBcPLrl3Rt_lfHDPqtOFK9l6x/preview">View the PDF</a>.</p>
+        </embed>
+      </object>
+    </div>
+  </div>
+  <div class="txt-col doc-reduced hide" id="item-TheState1">
+    <div class="row info-row-header">
+      <a class="col-6 button-minimize button-hide">Minimize</a>
+      <a class="col-md-6 fullScrButton button-full button-show">Full Screen</a>
+      <a class="col-md-6 col button-pdfClose">Close</a>
+      <object data="https://drive.google.com/file/d/1ORLxYNWcBcPLrl3Rt_lfHDPqtOFK9l6x/preview">
+        <embed src="https://drive.google.com/file/d/1ORLxYNWcBcPLrl3Rt_lfHDPqtOFK9l6x/preview" />
+            <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://drive.google.com/file/d/1ORLxYNWcBcPLrl3Rt_lfHDPqtOFK9l6x/preview">View the PDF</a>.</p>
+        </embed>
+      </object>
+    </div>
+  </div>
+  <div class="txt-col doc-reduced hide" id="item-VeryStrange">
+    <div class="row info-row-header">
+      <a class="col-6 button-minimize button-hide">Minimize</a>
+      <a class="col-md-6 fullScrButton button-full button-show">Full Screen</a>
+      <a class="col-md-6 col button-pdfClose">Close</a>
+    </div>
+  </div>
+  <div class="txt-col doc-reduced hide" id="item-VIPParty">
+    <div class="row info-row-header">
+      <a class="col-6 button-minimize button-hide">Minimize</a>
+      <a class="col-md-6 fullScrButton button-full button-show">Full Screen</a>
+      <a class="col-md-6 col button-pdfClose">Close</a>
+    </div>
+  </div>
+  <div class="txt-col doc-reduced hide" id="item-VisitPhuongDuc">
+    <div class="row info-row-header">
+      <a class="col-6 button-minimize button-hide">Minimize</a>
+      <a class="col-md-6 fullScrButton button-full button-show">Full Screen</a>
+      <a class="col-md-6 col button-pdfClose">Close</a>
+    </div>
+  </div>
+  <div class="txt-col doc-reduced hide" id="item-WalkingToTheStudio">
+    <div class="row info-row-header">
+      <a class="col-6 button-minimize button-hide">Minimize</a>
+      <a class="col-md-6 fullScrButton button-full button-show">Full Screen</a>
+      <a class="col-md-6 col button-pdfClose">Close</a>
+    </div>
+  </div>
+  <div class="txt-col doc-reduced hide" id="item-ZarMinHtikeShows">
+    <div class="row info-row-header">
+      <a class="col-6 button-minimize button-hide">Minimize</a>
+      <a class="col-md-6 fullScrButton button-full button-show">Full Screen</a>
+      <a class="col-md-6 col button-pdfClose">Close</a>
+    </div>
+  </div>
+  <div class="txt-col doc-reduced hide" id="item-ZarMinHtikeHome">
+    <div class="row info-row-header">
+      <a class="col-6 button-minimize button-hide">Minimize</a>
+      <a class="col-md-6 fullScrButton button-full button-show">Full Screen</a>
+      <a class="col-md-6 col button-pdfClose">Close</a>
+    </div>
+  </div>
+
+  <div class="col-md-2 col-sm-4 col-5 logo"><img src="logo/logo.png"></div>
+
+  <!-- Footer -->
+  <footer class="container footer full">
+    <div class="row">
+      <div class="col" style="padding: 0;">
+        <p class="marquee">
+          <span class="clock" id="ClockDisplay" onload="TimeDisplay()"></span>
+        </p>
+        <!--
+        <p class="marquee marquee2">
+          <span class="clock" id="ClockDisplay2" onload="TimeDisplay2()"></span>
+        </p>
+        --
+      </div>
+    </div>
+  </footer>
+
+  <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+          integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+          crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+          integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+          crossorigin="anonymous"></script>
+
+        <!-- Malihu Custom Scroll -->
+        <script src="scroll/jquery.mCustomScrollbar.concat.min.js"></script>
+
+        <script src="https://unpkg.com/scrollbooster@1.1.0/dist/scrollbooster.min.js"></script>
+        <script type="text/javascript" src="libs/styles.js"></script>
+        <script type="text/javascript" src="libs/documents.js"></script>
+</body>
+
+</html>
